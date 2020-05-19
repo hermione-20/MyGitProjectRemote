@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 配置struts2的默认消息资源包，全局的 -->
+	<constant name="struts.custom.i18n.resources" value="com.itheima.resource.message"></constant>
+	<package name="p1" extends="struts-default">
+	<action name="action1" class="com.itheima.web.action.Demo1Action">
+	<result>/success.jsp</result>
+	</action>
+	</package>
+	</struts>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	<package name="p1" extends="struts-default" namespace="/user">
+	<!-- 用户管理 -->
+	<action name="addUser" class="com.itheima.web.action.UserAction" method="addUser">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="updateUser" class="com.itheima.web.action.UserAction" method="addUser">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="deleteUser" class="com.itheima.web.action.UserAction" method="deleteUser">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="findUser" class="com.itheima.web.action.UserAction" method="findUser">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="findAllUser" class="com.itheima.web.action.UserAction" method="findAllUser">
+	<result >/success.jsp</result>
+	</action>
+	</package>
+	</struts>

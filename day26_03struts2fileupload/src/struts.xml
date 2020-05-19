@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- 开启静态方法调用 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+	<!-- 配置全局消息资源包 -->
+	<constant name="struts.custom.i18n.resources" value="com.itheima.web.action.fileupload_message"></constant>
+	<!-- 限制上传文件的大小：
+	第一种方式：通过修改struts2的常量，在default.properties中配的struts.multipart.maxSize=2097152-->
+	 
+	 <constant name="struts.multipart.maxSize" value="8388608"></constant>
+	 
+	<package name="p1" extends="struts-default">
+	<action name="upload" class="com.itheima.web.action.UploadAction" method="upload">
+	<!-- 第二种方式：通过给fileUpload的拦截器注入参数的形式，控制上传文件的大小 
+	这种方式不起作用
+	<interceptor-ref name="defaultStack">
+	<param name="fileUpload.maximumSize">8388608</param>
+	</interceptor-ref>
+	-->
+	
+	<interceptor-ref name="defaultStack">
+	<!-- 限制上传文件的拓展名，如果有多个，使用逗号分开 -->
+	<param name="fileUpload.allowedExtensions">jpg,png,bmp</param>
+	<!-- 限制上传文件的MIME类型，如果有多个，使用逗号分开 -->
+	<param name="fileUpload.allowedTypes">image/jpg,image/pjpeg,image/png</param>
+	</interceptor-ref>
+	<result name="input">/upload1.jsp</result>
+	</action>
+	
+	<action name="upload1" class="com.itheima.web.action.UploadAction1" method="upload">
+	<result name="input">/upload2.jsp</result>
+	</action>
+	
+	<action name="download" class="com.itheima.web.action.DownloadAction" method="download">
+	<result name="success" type="stream">
+	<!-- 给stream的结果类型注入参数：Content-Type -->
+	<param name="contentType">application/octet-stream</param>
+	
+	<!-- 告知客户浏览器以下载的方式打开 
+	<param name="contentDisposition">attachment;filename=photo.jpg</param>-->
+	
+	<!-- 使用OGNL表达式，来动态获取文件名 -->
+	<param name="contentDisposition">attachment;filename=${@java.net.URLEncoder@encode(filename,"UTF-8")}</param>
+	<!-- 注入字节输入流：取值要写动作类中set方法的名称，首字母改成小写 -->
+	<param name="inputName">inputStream</param>
+	</result>
+	</action>
+	</package>
+	
+	
+	</struts>

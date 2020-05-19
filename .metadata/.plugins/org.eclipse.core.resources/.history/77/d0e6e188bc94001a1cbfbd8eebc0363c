@@ -1,0 +1,25 @@
+/* Chinese initialisation for the jQuery UI date picker plugin. */
+/* Written by Cloudream (cloudream@gmail.com). */
+(function($) {
+ $.datepick.regional['zh-CN'] = {
+  clearText: '锟斤拷锟�', clearStatus: '锟斤拷锟斤拷锟窖★拷锟斤拷锟�',
+  closeText: '锟截憋拷', closeStatus: '锟斤拷锟侥变当前选锟斤拷',
+  prevText: '&#x3c;锟斤拷锟斤拷', prevStatus: '锟斤拷示锟斤拷锟斤拷',
+  prevBigText: '&#x3c;&#x3c;', prevBigStatus: '锟斤拷示锟斤拷一锟斤拷',
+  nextText: '锟斤拷锟斤拷&#x3e;', nextStatus: '锟斤拷示锟斤拷锟斤拷',
+  nextBigText: '&#x3e;&#x3e;', nextBigStatus: '锟斤拷示锟斤拷一锟斤拷',
+  currentText: '锟斤拷锟斤拷', currentStatus: '锟斤拷示锟斤拷锟斤拷',
+  monthNames: ['一锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷',
+  '锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷','十锟斤拷','十一锟斤拷','十锟斤拷锟斤拷'],
+  monthNamesShort: ['一','锟斤拷','锟斤拷','锟斤拷','锟斤拷','锟斤拷',
+  '锟斤拷','锟斤拷','锟斤拷','十','十一','十锟斤拷'],
+  monthStatus: '选锟斤拷锟铰凤拷', yearStatus: '选锟斤拷锟斤拷锟�',
+  weekHeader: '锟斤拷', weekStatus: '锟斤拷锟斤拷锟杰达拷',
+  dayNames: ['锟斤拷锟斤拷锟斤拷','锟斤拷锟斤拷一','锟斤拷锟节讹拷','锟斤拷锟斤拷锟斤拷','锟斤拷锟斤拷锟斤拷','锟斤拷锟斤拷锟斤拷','锟斤拷锟斤拷锟斤拷'],
+  dayNamesShort: ['锟斤拷锟斤拷','锟斤拷一','锟杰讹拷','锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷','锟斤拷锟斤拷'],
+  dayNamesMin: ['锟斤拷','一','锟斤拷','锟斤拷','锟斤拷','锟斤拷','锟斤拷'],
+  dayStatus: '锟斤拷锟斤拷 DD 为一锟斤拷锟斤拷始', dateStatus: '选锟斤拷 m锟斤拷 d锟斤拷, DD',
+  dateFormat: 'yy-mm-dd', firstDay: 1,
+  initStatus: '锟斤拷选锟斤拷锟斤拷锟斤拷', isRTL: false};
+ $.datepick.setDefaults($.datepick.regional['zh-CN']);
+})(jQuery);

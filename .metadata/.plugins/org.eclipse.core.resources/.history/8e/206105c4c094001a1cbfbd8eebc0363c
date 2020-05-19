@@ -1,0 +1,53 @@
+package com.itheima.web.action;
+
+import javax.servlet.http.HttpSession;
+
+import org.apache.struts2.ServletActionContext;
+import org.apache.struts2.components.ActionError;
+
+import com.itheima.domain.User;
+import com.itheima.service.IUserService;
+import com.itheima.service.impl.UserServiceImpl;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
+
+public class UserAction extends ActionSupport implements ModelDriven<User> {
+	private IUserService service=new UserServiceImpl();
+	private User user=new User();
+
+	
+	public User getModel() {
+		return user;
+	}
+	
+	//------添加用户------
+	public String add() {
+		return SUCCESS;
+	}
+	
+	//-------用户登录的动作方法-------
+	public String login() {
+		User dbUser=service.login(user.getLogonName(), user.getLogonPwd());
+		//判断查到了用户没有
+		if(dbUser==null) {
+			addActionError("用户不存在，或者用户名与密码不匹配");
+			return "input";
+		}
+		//登陆成功
+		HttpSession session=ServletActionContext.getRequest().getSession();
+		session.setAttribute("user", dbUser);
+		return SUCCESS;
+	}
+
+	
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	
+
+}

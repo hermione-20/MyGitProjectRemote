@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="p1" extends="struts-default">
+	<action name="action1" class="com.itheima.web.action.Demo1Action" method="addUser">
+	
+	<!-- 当我们不写任何拦截器时，默认的拦截器栈defaultStack它来为我们工作。
+				 但是，只要写了任何一个拦截器，默认的就全都不起作用了 -->
+	<!-- 使用注入的方式，给动作类中的参数赋值 -->
+	<param name="username">张三</param>
+	<param name="age">18</param>
+	</action>	
+	
+	<!-- 动态参数封装的第一种形式的配置 -->
+	<action name="action2" class="com.itheima.web.action.Demo2Action" method="addUser">
+	</action>
+	
+	<!-- 动态参数封装的第二种形式的配置 -->
+	<action name="action3" class="com.itheima.web.action.Demo3Action" method="addUser">
+	</action>
+	
+	<!-- 动态参数封装的第三种形式的配置 -->
+	<action name="action4" class="com.itheima.web.action.Demo4Action" method="addUser">
+	</action>
+	</package>
+	
+	</struts>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581084868822_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=day28_01struts2final/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_01struts2Template1/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_02struts2HelloAction/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_03struts2Action/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_04struts2package/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581084868837_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589851430613_3" label="spring" name="spring"/>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1589852718154_4" label="struts2" name="struts2">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day26_02struts2interceptor" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day24_06struts2Result" type="4"/>
+<item elementID="=day24_02struts2HelloAction" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day24_07struts2ServletAPI" type="4"/>
+<item elementID="=day28_01struts2final" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_03struts2Action" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day25_04struts2convert" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day24_05struts2actionElements" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day25_01struts2multiconfig" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day26_03struts2fileupload" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day27_02struts2resubmit" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day25_03struts2regist" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day25_05struts2validate" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day25_02struts2params" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day27_01struts2contextMap" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day26_04struts2ognl" type="4"/>
+<item elementID="=day24_01struts2Template1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=day24_04struts2package" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/product" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/day26_01struts2i18n" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1581084871381_2" label="Window Working Set" name="Aggregate for window 1581084871381"/>
+</workingSetManager>

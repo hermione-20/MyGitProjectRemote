@@ -1,0 +1,30 @@
+<classpath>
+  <container id="day24_06struts2Result!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/JAVA/workplace/day24_06struts2Result/WebContent/WEB-INF/lib/xwork-core-2.3.15.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/day24-struts/资料/staruml5.0withcm.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="day28_01struts2final!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/JAVA/workplace/day28_01struts2final/WebContent/WEB-INF/lib/commons-fileupload-1.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/03、第三阶段struts框架技术(5天)/day24-struts/源码/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+    <entry id="D:/JAVA/workplace/day28_01struts2final/WebContent/WEB-INF/lib/struts2-core-2.3.15.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/03、第三阶段struts框架技术(5天)/day24-struts/源码/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="day24_05struts2actionElements!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/JAVA/workplace/day24_05struts2actionElements/WebContent/WEB-INF/lib/xwork-core-2.3.15.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/day24-struts/源码/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="day26_02struts2interceptor!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/JAVA/workplace/day26_02struts2interceptor/WebContent/WEB-INF/lib/xwork-core-2.3.15.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/03、第三阶段struts框架技术(5天)/day25-struts/day25-struts/源码/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+  </container>
+  <container id="day24_01struts2Template1!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/JAVA/workplace/day24_01struts2Template1/WebContent/WEB-INF/lib/struts2-core-2.3.15.3.jar">
+      <source-attachment-path>D:/Hermione的文件/国航/工作相关文件夹/主要工作系列/03、第三阶段struts框架技术(5天)/day25-struts/day25-struts/源码/struts-2.3.15.3-all.zip</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

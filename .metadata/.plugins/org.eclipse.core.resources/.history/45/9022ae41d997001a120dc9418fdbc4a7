@@ -1,0 +1,90 @@
+package com.itheima.dao.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+
+import com.itheima.dao.IUserDao;
+import com.itheima.domain.User;
+import com.itheima.utils.JNDIUtil;
+
+
+public class UserDaoImpl implements IUserDao {
+private QueryRunner qr = new QueryRunner(JNDIUtil.getDataSource());
+	
+	
+	public int addUser(User user) {
+		try{
+			return qr.update("insert into S_User(userID,userName,logonName,logonPwd,gender,birthday,education,telephone,hobby,path,filename,remark)values(?,?,?,?,?,?,?,?,?,?,?,?)",
+					user.getUserID(),user.getUserName(),user.getLogonName(),user.getLogonPwd(),user.getGender(),user.getBirthday(),user.getEducation(),user.getTelephone(),
+					user.getHobby(),user.getPath(),user.getFilename(),user.getRemark());
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+	
+	public int updateUser(User user) {
+		try{
+			return qr.update("update S_User set userName=?,logonName=?,logonPwd=?,gender=?,birthday=?,education=?,telephone=?,hobby=?,path=?,filename=?,remark=? where userID = ?",
+					user.getUserName(),user.getLogonName(),user.getLogonPwd(),user.getGender(),user.getBirthday(),user.getEducation(),user.getTelephone(),
+					user.getHobby(),user.getPath(),user.getFilename(),user.getRemark(),user.getUserID());
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+	
+	public int deleteUser(Integer userid) {
+		try{
+			return qr.update("delete from S_User where userID = ?",userid);
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+	
+	public User selectUserById(Integer userid) {
+		try{
+			return qr.query("select * from S_User where userID = ? ", new BeanHandler<User>(User.class),userid);
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+	
+	public List<User> selectAllUser() {
+		try{
+			return qr.query("select * from S_User ", new BeanListHandler<User>(User.class));
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+
+	
+	public User selectUserByInfo(String logonName, String logonPwd) {
+		try{
+			return qr.query("select * from S_User where logonName=? and logonPwd=? ", new BeanHandler<User>(User.class),logonName,logonPwd);
+		}catch(Exception e){
+			throw new RuntimeException(e);
+		}
+	}
+
+
+	public List<User> selectUserByCondition(String userName, String gender,
+			String education, String isUpload) {
+		//如果上面的所有条件都没选的话，
+		if(StringUtils.isBlank()) {
+			
+		}
+		
+		return selectAllUser();
+
+	}
+}
+
+

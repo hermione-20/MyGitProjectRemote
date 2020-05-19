@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<package name="p3" extends="struts-default" namespace="/module">
+	<!-- 模块管理 -->
+	<action name="addModule" class="com.itheima.web.action.ModuleAction" method="addModule">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="updateModule" class="com.itheima.web.action.ModuleAction" method="addModule">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="deleteModule" class="com.itheima.web.action.ModuleAction" method="deleteModule">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="findModule" class="com.itheima.web.action.ModuleAction" method="findModule">
+	<result >/success.jsp</result>
+	</action>
+	
+	<action name="findAllModule" class="com.itheima.web.action.ModuleAction" method="findAllModule">
+	<result >/success.jsp</result>
+	</action>
+	</package>
+	</struts>

@@ -1,0 +1,24 @@
+content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz.
+content_assist_disable_completion_trigger_chars=true
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="cn.itcastma.reflect.student"><rhs name\="cn.itcastma.reflect.student"/></lhs><lhs name\="com.itheima.product.service.UserService"><rhs name\="com.itheima.product.service.UserService"/></lhs><lhs name\="org.apache.commons.dbutils.AbstractQueryRunner"><rhs name\="org.apache.commons.dbutils.QueryRunner"/></lhs><lhs name\="org.apache.commons.dbutils.QueryRunner"><rhs name\="org.apache.commons.dbutils.QueryRunner"/></lhs><lhs name\="org.apache.commons.dbutils.ResultSetHandler"><rhs name\="org.apache.commons.dbutils.handlers.ArrayHandler"/><rhs name\="org.apache.commons.dbutils.handlers.ArrayListHandler"/><rhs name\="org.apache.commons.dbutils.handlers.ColumnListHandler"/><rhs name\="org.apache.commons.dbutils.handlers.KeyedHandler"/><rhs name\="org.apache.commons.dbutils.handlers.MapHandler"/><rhs name\="org.apache.commons.dbutils.handlers.MapListHandler"/><rhs name\="org.apache.commons.dbutils.handlers.BeanHandler"/><rhs name\="org.apache.commons.dbutils.handlers.ScalarHandler"/><rhs name\="org.apache.commons.dbutils.handlers.BeanListHandler"/></lhs><lhs name\="com.itheima.product.domain.User"><rhs name\="com.itheima.product.domain.User"/></lhs><lhs name\="com.ithenma.service.AccountService"><rhs name\="com.ithenma.service.impl.AccountServiceImpl"/></lhs><lhs name\="java.lang.ThreadLocal"><rhs name\="java.lang.ThreadLocal"/></lhs><lhs name\="com.itheima.dao.BookDaoImpl"><rhs name\="com.itheima.dao.BookDaoImpl"/></lhs><lhs name\="com.itheima.service.BookServiceImpl"><rhs name\="com.itheima.service.BookServiceImpl"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Map"><rhs name\="java.util.HashMap"/></lhs><lhs name\="com.itheima.product.dao.ProductDao"><rhs name\="com.itheima.product.dao.ProductDao"/></lhs><lhs name\="com.itheima.product.domain.OrderItem"><rhs name\="com.itheima.product.domain.OrderItem"/></lhs><lhs name\="com.itheima.product.service.OrderService"><rhs name\="com.itheima.product.service.OrderService"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="com.opensymphony.xwork2.ActionContext"><rhs name\="com.opensymphony.xwork2.ActionContext"/></lhs><lhs name\="com.itheima.domain.Customer"><rhs name\="com.itheima.domain.Customer"/></lhs></history>
+content_assist_number_of_computers=18
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=1
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=18
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

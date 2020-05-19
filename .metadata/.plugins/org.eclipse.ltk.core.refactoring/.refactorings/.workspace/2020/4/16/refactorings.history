@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;day25_01struts2params&apos; to &apos;day25_01struts2multiconfig&apos;" description="Rename resource &apos;day25_01struts2params&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/day25_01struts2params" name="day25_01struts2multiconfig" stamp="1587115344485" updateReferences="true"/>
+</session>
